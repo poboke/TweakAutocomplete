@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C50A402A1CED5796009D08FE /* DVTSourceTextView+Tweak.m in Sources */ = {isa = PBXBuildFile; fileRef = C50A40291CED5796009D08FE /* DVTSourceTextView+Tweak.m */; };
+		C50A402E1CEDA273009D08FE /* DVTKeywordScanner+Tweak.m in Sources */ = {isa = PBXBuildFile; fileRef = C50A402D1CEDA273009D08FE /* DVTKeywordScanner+Tweak.m */; };
+		C517F16D1CE8869A0054A0A1 /* IDESourceCodeDocument+Tweak.m in Sources */ = {isa = PBXBuildFile; fileRef = C517F16C1CE8869A0054A0A1 /* IDESourceCodeDocument+Tweak.m */; };
+		C517F1711CE8880E0054A0A1 /* IDESourceEditor in Frameworks */ = {isa = PBXBuildFile; fileRef = C517F1701CE8880E0054A0A1 /* IDESourceEditor */; };
+		C52814701CF303A400184D25 /* LogosSyntaxCompletion.plist in Resources */ = {isa = PBXBuildFile; fileRef = C528146E1CF303A400184D25 /* LogosSyntaxCompletion.plist */; };
+		C53B802D1CEC7AEF002E6CF2 /* DVTCompletingTextView+Tweak.m in Sources */ = {isa = PBXBuildFile; fileRef = C53B802C1CEC7AEF002E6CF2 /* DVTCompletingTextView+Tweak.m */; };
+		C53B80311CEC7D92002E6CF2 /* IDESourceCodeEditor+Tweak.m in Sources */ = {isa = PBXBuildFile; fileRef = C53B80301CEC7D92002E6CF2 /* IDESourceCodeEditor+Tweak.m */; };
+		C53DE8971CE75EDD00DA381D /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53DE8961CE75EDD00DA381D /* AppKit.framework */; };
+		C53DE8991CE75EDD00DA381D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53DE8981CE75EDD00DA381D /* Foundation.framework */; };
+		C53DE8A61CE75EDD00DA381D /* TweakAutocomplete.m in Sources */ = {isa = PBXBuildFile; fileRef = C53DE8A51CE75EDD00DA381D /* TweakAutocomplete.m */; };
+		C53DE8AD1CE75FE800DA381D /* xx.xm in Resources */ = {isa = PBXBuildFile; fileRef = C53DE8AC1CE75FE800DA381D /* xx.xm */; };
+		C53DE8B81CE7637C00DA381D /* IDEFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53DE8B61CE7637C00DA381D /* IDEFoundation.framework */; };
+		C53DE8B91CE7637C00DA381D /* IDEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53DE8B71CE7637C00DA381D /* IDEKit.framework */; };
+		C53DE8C11CE767DD00DA381D /* DVTFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53DE8BF1CE767DD00DA381D /* DVTFoundation.framework */; };
+		C53DE8C21CE767DD00DA381D /* DVTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53DE8C01CE767DD00DA381D /* DVTKit.framework */; };
+		C5AEC33B1CF3044800D22486 /* TweakCompletionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AEC3391CF3044800D22486 /* TweakCompletionManager.m */; };
+		C5C4A21C1CF30D88006375E8 /* IDEIndexCompletionStrategy+Tweak.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4A21B1CF30D88006375E8 /* IDEIndexCompletionStrategy+Tweak.m */; };
+		C5C4A21F1CF30E16006375E8 /* IDEIndexCompletionItem+Init.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4A21E1CF30E16006375E8 /* IDEIndexCompletionItem+Init.m */; };
+		C5C6F17F1CF3601C00E43193 /* OZFileInZipInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C6F16B1CF3601C00E43193 /* OZFileInZipInfo.m */; };
+		C5C6F1801CF3601C00E43193 /* OZZipException.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C6F16F1CF3601C00E43193 /* OZZipException.m */; };
+		C5C6F1811CF3601C00E43193 /* OZZipFile.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C6F1731CF3601C00E43193 /* OZZipFile.m */; };
+		C5C6F1821CF3601C00E43193 /* OZZipReadStream.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C6F1791CF3601C00E43193 /* OZZipReadStream.m */; };
+		C5C6F1831CF3601C00E43193 /* OZZipWriteStream.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C6F17E1CF3601C00E43193 /* OZZipWriteStream.m */; };
+		C5C6F18C1CF3602F00E43193 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = C5C6F1861CF3602F00E43193 /* ioapi.c */; };
+		C5C6F18D1CF3602F00E43193 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = C5C6F1881CF3602F00E43193 /* unzip.c */; };
+		C5C6F18E1CF3602F00E43193 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = C5C6F18A1CF3602F00E43193 /* zip.c */; };
+		C5C6F1A61CF3613900E43193 /* ObjcSyntaxCompletion.zip in Resources */ = {isa = PBXBuildFile; fileRef = C5C6F1A51CF3613900E43193 /* ObjcSyntaxCompletion.zip */; };
+		C5C8D4031CF3E919000398B3 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C8D4021CF3E919000398B3 /* JRSwizzle.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C50A40281CED5796009D08FE /* DVTSourceTextView+Tweak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTSourceTextView+Tweak.h"; sourceTree = "<group>"; };
+		C50A40291CED5796009D08FE /* DVTSourceTextView+Tweak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DVTSourceTextView+Tweak.m"; sourceTree = "<group>"; };
+		C50A402B1CEDA263009D08FE /* DVTKeywordScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTKeywordScanner.h; sourceTree = "<group>"; };
+		C50A402C1CEDA273009D08FE /* DVTKeywordScanner+Tweak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTKeywordScanner+Tweak.h"; sourceTree = "<group>"; };
+		C50A402D1CEDA273009D08FE /* DVTKeywordScanner+Tweak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DVTKeywordScanner+Tweak.m"; sourceTree = "<group>"; };
+		C517F16A1CE8868B0054A0A1 /* IDESourceCodeDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDESourceCodeDocument.h; sourceTree = "<group>"; };
+		C517F16B1CE8869A0054A0A1 /* IDESourceCodeDocument+Tweak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDESourceCodeDocument+Tweak.h"; sourceTree = "<group>"; };
+		C517F16C1CE8869A0054A0A1 /* IDESourceCodeDocument+Tweak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDESourceCodeDocument+Tweak.m"; sourceTree = "<group>"; };
+		C517F1701CE8880E0054A0A1 /* IDESourceEditor */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = IDESourceEditor; path = /Applications/Xcode.app/Contents/PlugIns/IDESourceEditor.ideplugin/Contents/MacOS/IDESourceEditor; sourceTree = "<absolute>"; };
+		C528146E1CF303A400184D25 /* LogosSyntaxCompletion.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LogosSyntaxCompletion.plist; sourceTree = "<group>"; };
+		C53B802A1CEC7AE0002E6CF2 /* DVTCompletingTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTCompletingTextView.h; sourceTree = "<group>"; };
+		C53B802B1CEC7AEF002E6CF2 /* DVTCompletingTextView+Tweak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTCompletingTextView+Tweak.h"; sourceTree = "<group>"; };
+		C53B802C1CEC7AEF002E6CF2 /* DVTCompletingTextView+Tweak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DVTCompletingTextView+Tweak.m"; sourceTree = "<group>"; };
+		C53B802E1CEC7D84002E6CF2 /* IDESourceCodeEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDESourceCodeEditor.h; sourceTree = "<group>"; };
+		C53B802F1CEC7D92002E6CF2 /* IDESourceCodeEditor+Tweak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDESourceCodeEditor+Tweak.h"; sourceTree = "<group>"; };
+		C53B80301CEC7D92002E6CF2 /* IDESourceCodeEditor+Tweak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDESourceCodeEditor+Tweak.m"; sourceTree = "<group>"; };
+		C53DE8931CE75EDD00DA381D /* TweakAutocomplete.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TweakAutocomplete.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		C53DE8961CE75EDD00DA381D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		C53DE8981CE75EDD00DA381D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		C53DE89C1CE75EDD00DA381D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C53DE8A21CE75EDD00DA381D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C53DE8A41CE75EDD00DA381D /* TweakAutocomplete.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TweakAutocomplete.h; sourceTree = "<group>"; };
+		C53DE8A51CE75EDD00DA381D /* TweakAutocomplete.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TweakAutocomplete.m; sourceTree = "<group>"; };
+		C53DE8AC1CE75FE800DA381D /* xx.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = xx.xm; sourceTree = "<group>"; };
+		C53DE8B11CE7633100DA381D /* IDEIndexCompletionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEIndexCompletionItem.h; sourceTree = "<group>"; };
+		C53DE8B21CE7633100DA381D /* IDEIndexCompletionStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEIndexCompletionStrategy.h; sourceTree = "<group>"; };
+		C53DE8B61CE7637C00DA381D /* IDEFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IDEFoundation.framework; path = /Applications/Xcode.app/Contents/Frameworks/IDEFoundation.framework; sourceTree = "<absolute>"; };
+		C53DE8B71CE7637C00DA381D /* IDEKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IDEKit.framework; path = /Applications/Xcode.app/Contents/Frameworks/IDEKit.framework; sourceTree = "<absolute>"; };
+		C53DE8BA1CE7671000DA381D /* DVTSourceTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceTextView.h; sourceTree = "<group>"; };
+		C53DE8BF1CE767DD00DA381D /* DVTFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVTFoundation.framework; path = /Applications/Xcode.app/Contents/SharedFrameworks/DVTFoundation.framework; sourceTree = "<absolute>"; };
+		C53DE8C01CE767DD00DA381D /* DVTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVTKit.framework; path = /Applications/Xcode.app/Contents/SharedFrameworks/DVTKit.framework; sourceTree = "<absolute>"; };
+		C58957C61CE8BF450019E835 /* DVTSourceCodeSymbolKind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceCodeSymbolKind.h; sourceTree = "<group>"; };
+		C5AEC3381CF3044800D22486 /* TweakCompletionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweakCompletionManager.h; sourceTree = "<group>"; };
+		C5AEC3391CF3044800D22486 /* TweakCompletionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweakCompletionManager.m; sourceTree = "<group>"; };
+		C5C4A21A1CF30D88006375E8 /* IDEIndexCompletionStrategy+Tweak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDEIndexCompletionStrategy+Tweak.h"; sourceTree = "<group>"; };
+		C5C4A21B1CF30D88006375E8 /* IDEIndexCompletionStrategy+Tweak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDEIndexCompletionStrategy+Tweak.m"; sourceTree = "<group>"; };
+		C5C4A21D1CF30E16006375E8 /* IDEIndexCompletionItem+Init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDEIndexCompletionItem+Init.h"; sourceTree = "<group>"; };
+		C5C4A21E1CF30E16006375E8 /* IDEIndexCompletionItem+Init.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDEIndexCompletionItem+Init.m"; sourceTree = "<group>"; };
+		C5C6F1671CF3601C00E43193 /* Objective-Zip+NSError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Objective-Zip+NSError.h"; sourceTree = "<group>"; };
+		C5C6F1681CF3601C00E43193 /* Objective-Zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Objective-Zip.h"; sourceTree = "<group>"; };
+		C5C6F1691CF3601C00E43193 /* OZFileInZipInfo+Internals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OZFileInZipInfo+Internals.h"; sourceTree = "<group>"; };
+		C5C6F16A1CF3601C00E43193 /* OZFileInZipInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OZFileInZipInfo.h; sourceTree = "<group>"; };
+		C5C6F16B1CF3601C00E43193 /* OZFileInZipInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OZFileInZipInfo.m; sourceTree = "<group>"; };
+		C5C6F16C1CF3601C00E43193 /* OZZipCompressionLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OZZipCompressionLevel.h; sourceTree = "<group>"; };
+		C5C6F16D1CF3601C00E43193 /* OZZipException+Internals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OZZipException+Internals.h"; sourceTree = "<group>"; };
+		C5C6F16E1CF3601C00E43193 /* OZZipException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OZZipException.h; sourceTree = "<group>"; };
+		C5C6F16F1CF3601C00E43193 /* OZZipException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OZZipException.m; sourceTree = "<group>"; };
+		C5C6F1701CF3601C00E43193 /* OZZipFile+NSError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OZZipFile+NSError.h"; sourceTree = "<group>"; };
+		C5C6F1711CF3601C00E43193 /* OZZipFile+Standard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OZZipFile+Standard.h"; sourceTree = "<group>"; };
+		C5C6F1721CF3601C00E43193 /* OZZipFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OZZipFile.h; sourceTree = "<group>"; };
+		C5C6F1731CF3601C00E43193 /* OZZipFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OZZipFile.m; sourceTree = "<group>"; };
+		C5C6F1741CF3601C00E43193 /* OZZipFileMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OZZipFileMode.h; sourceTree = "<group>"; };
+		C5C6F1751CF3601C00E43193 /* OZZipReadStream+Internals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OZZipReadStream+Internals.h"; sourceTree = "<group>"; };
+		C5C6F1761CF3601C00E43193 /* OZZipReadStream+NSError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OZZipReadStream+NSError.h"; sourceTree = "<group>"; };
+		C5C6F1771CF3601C00E43193 /* OZZipReadStream+Standard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OZZipReadStream+Standard.h"; sourceTree = "<group>"; };
+		C5C6F1781CF3601C00E43193 /* OZZipReadStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OZZipReadStream.h; sourceTree = "<group>"; };
+		C5C6F1791CF3601C00E43193 /* OZZipReadStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OZZipReadStream.m; sourceTree = "<group>"; };
+		C5C6F17A1CF3601C00E43193 /* OZZipWriteStream+Internals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OZZipWriteStream+Internals.h"; sourceTree = "<group>"; };
+		C5C6F17B1CF3601C00E43193 /* OZZipWriteStream+NSError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OZZipWriteStream+NSError.h"; sourceTree = "<group>"; };
+		C5C6F17C1CF3601C00E43193 /* OZZipWriteStream+Standard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OZZipWriteStream+Standard.h"; sourceTree = "<group>"; };
+		C5C6F17D1CF3601C00E43193 /* OZZipWriteStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OZZipWriteStream.h; sourceTree = "<group>"; };
+		C5C6F17E1CF3601C00E43193 /* OZZipWriteStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OZZipWriteStream.m; sourceTree = "<group>"; };
+		C5C6F1851CF3602F00E43193 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		C5C6F1861CF3602F00E43193 /* ioapi.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = ioapi.c; sourceTree = "<group>"; };
+		C5C6F1871CF3602F00E43193 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		C5C6F1881CF3602F00E43193 /* unzip.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = unzip.c; sourceTree = "<group>"; };
+		C5C6F1891CF3602F00E43193 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		C5C6F18A1CF3602F00E43193 /* zip.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = zip.c; sourceTree = "<group>"; };
+		C5C6F18B1CF3602F00E43193 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		C5C6F1A51CF3613900E43193 /* ObjcSyntaxCompletion.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = ObjcSyntaxCompletion.zip; sourceTree = "<group>"; };
+		C5C8D4011CF3E919000398B3 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
+		C5C8D4021CF3E919000398B3 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C53DE88F1CE75EDD00DA381D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C53DE8B81CE7637C00DA381D /* IDEFoundation.framework in Frameworks */,
+				C53DE8C11CE767DD00DA381D /* DVTFoundation.framework in Frameworks */,
+				C53DE8C21CE767DD00DA381D /* DVTKit.framework in Frameworks */,
+				C53DE8971CE75EDD00DA381D /* AppKit.framework in Frameworks */,
+				C53DE8B91CE7637C00DA381D /* IDEKit.framework in Frameworks */,
+				C517F1711CE8880E0054A0A1 /* IDESourceEditor in Frameworks */,
+				C53DE8991CE75EDD00DA381D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C53DE8911CE75EDD00DA381D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C53DE8891CE75EDD00DA381D = {
+			isa = PBXGroup;
+			children = (
+				C53DE89A1CE75EDD00DA381D /* TweakAutocomplete */,
+				C53DE8951CE75EDD00DA381D /* Frameworks */,
+				C53DE8941CE75EDD00DA381D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C53DE8941CE75EDD00DA381D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C53DE8931CE75EDD00DA381D /* TweakAutocomplete.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C53DE8951CE75EDD00DA381D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C517F1701CE8880E0054A0A1 /* IDESourceEditor */,
+				C53DE8BF1CE767DD00DA381D /* DVTFoundation.framework */,
+				C53DE8C01CE767DD00DA381D /* DVTKit.framework */,
+				C53DE8B61CE7637C00DA381D /* IDEFoundation.framework */,
+				C53DE8B71CE7637C00DA381D /* IDEKit.framework */,
+				C5C8D4041CF42C19000398B3 /* Other Framewotks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C53DE89A1CE75EDD00DA381D /* TweakAutocomplete */ = {
+			isa = PBXGroup;
+			children = (
+				C53DE8AC1CE75FE800DA381D /* xx.xm */,
+				C53DE8A41CE75EDD00DA381D /* TweakAutocomplete.h */,
+				C53DE8A51CE75EDD00DA381D /* TweakAutocomplete.m */,
+				C5AEC3351CF3044800D22486 /* CompletionManager */,
+				C53DE8AE1CE7633100DA381D /* HookClasses */,
+				C53DE8AF1CE7633100DA381D /* XcodeHeaders */,
+				C5C4A2201CF3537D006375E8 /* Utils */,
+				C53DE89B1CE75EDD00DA381D /* Supporting Files */,
+			);
+			path = TweakAutocomplete;
+			sourceTree = "<group>";
+		};
+		C53DE89B1CE75EDD00DA381D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5CE2FF71CEE08CB00DE49D8 /* Resources */,
+				C53DE89C1CE75EDD00DA381D /* Info.plist */,
+				C53DE8A21CE75EDD00DA381D /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C53DE8AE1CE7633100DA381D /* HookClasses */ = {
+			isa = PBXGroup;
+			children = (
+				C55A5D281CF04F340090227B /* FileType */,
+				C55A5D291CF0511C0090227B /* Completion */,
+				C5CE30011CEEAA1B00DE49D8 /* LogosSyntax */,
+			);
+			path = HookClasses;
+			sourceTree = "<group>";
+		};
+		C53DE8AF1CE7633100DA381D /* XcodeHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				C53DE8BA1CE7671000DA381D /* DVTSourceTextView.h */,
+				C53B802A1CEC7AE0002E6CF2 /* DVTCompletingTextView.h */,
+				C50A402B1CEDA263009D08FE /* DVTKeywordScanner.h */,
+				C58957C61CE8BF450019E835 /* DVTSourceCodeSymbolKind.h */,
+				C53B802E1CEC7D84002E6CF2 /* IDESourceCodeEditor.h */,
+				C517F16A1CE8868B0054A0A1 /* IDESourceCodeDocument.h */,
+				C53DE8B21CE7633100DA381D /* IDEIndexCompletionStrategy.h */,
+				C53DE8B11CE7633100DA381D /* IDEIndexCompletionItem.h */,
+			);
+			path = XcodeHeaders;
+			sourceTree = "<group>";
+		};
+		C55A5D281CF04F340090227B /* FileType */ = {
+			isa = PBXGroup;
+			children = (
+				C53B802F1CEC7D92002E6CF2 /* IDESourceCodeEditor+Tweak.h */,
+				C53B80301CEC7D92002E6CF2 /* IDESourceCodeEditor+Tweak.m */,
+				C517F16B1CE8869A0054A0A1 /* IDESourceCodeDocument+Tweak.h */,
+				C517F16C1CE8869A0054A0A1 /* IDESourceCodeDocument+Tweak.m */,
+			);
+			name = FileType;
+			sourceTree = "<group>";
+		};
+		C55A5D291CF0511C0090227B /* Completion */ = {
+			isa = PBXGroup;
+			children = (
+				C5C4A21A1CF30D88006375E8 /* IDEIndexCompletionStrategy+Tweak.h */,
+				C5C4A21B1CF30D88006375E8 /* IDEIndexCompletionStrategy+Tweak.m */,
+			);
+			name = Completion;
+			sourceTree = "<group>";
+		};
+		C5AEC3351CF3044800D22486 /* CompletionManager */ = {
+			isa = PBXGroup;
+			children = (
+				C5AEC3381CF3044800D22486 /* TweakCompletionManager.h */,
+				C5AEC3391CF3044800D22486 /* TweakCompletionManager.m */,
+				C5C4A21D1CF30E16006375E8 /* IDEIndexCompletionItem+Init.h */,
+				C5C4A21E1CF30E16006375E8 /* IDEIndexCompletionItem+Init.m */,
+			);
+			path = CompletionManager;
+			sourceTree = "<group>";
+		};
+		C5C4A2201CF3537D006375E8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C5C8D4001CF3E919000398B3 /* JRSwizzle */,
+				C5C6F1661CF3601C00E43193 /* Objective-Zip */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C5C6F1661CF3601C00E43193 /* Objective-Zip */ = {
+			isa = PBXGroup;
+			children = (
+				C5C6F1841CF3602F00E43193 /* MiniZip */,
+				C5C6F1671CF3601C00E43193 /* Objective-Zip+NSError.h */,
+				C5C6F1681CF3601C00E43193 /* Objective-Zip.h */,
+				C5C6F1691CF3601C00E43193 /* OZFileInZipInfo+Internals.h */,
+				C5C6F16A1CF3601C00E43193 /* OZFileInZipInfo.h */,
+				C5C6F16B1CF3601C00E43193 /* OZFileInZipInfo.m */,
+				C5C6F16C1CF3601C00E43193 /* OZZipCompressionLevel.h */,
+				C5C6F16D1CF3601C00E43193 /* OZZipException+Internals.h */,
+				C5C6F16E1CF3601C00E43193 /* OZZipException.h */,
+				C5C6F16F1CF3601C00E43193 /* OZZipException.m */,
+				C5C6F1701CF3601C00E43193 /* OZZipFile+NSError.h */,
+				C5C6F1711CF3601C00E43193 /* OZZipFile+Standard.h */,
+				C5C6F1721CF3601C00E43193 /* OZZipFile.h */,
+				C5C6F1731CF3601C00E43193 /* OZZipFile.m */,
+				C5C6F1741CF3601C00E43193 /* OZZipFileMode.h */,
+				C5C6F1751CF3601C00E43193 /* OZZipReadStream+Internals.h */,
+				C5C6F1761CF3601C00E43193 /* OZZipReadStream+NSError.h */,
+				C5C6F1771CF3601C00E43193 /* OZZipReadStream+Standard.h */,
+				C5C6F1781CF3601C00E43193 /* OZZipReadStream.h */,
+				C5C6F1791CF3601C00E43193 /* OZZipReadStream.m */,
+				C5C6F17A1CF3601C00E43193 /* OZZipWriteStream+Internals.h */,
+				C5C6F17B1CF3601C00E43193 /* OZZipWriteStream+NSError.h */,
+				C5C6F17C1CF3601C00E43193 /* OZZipWriteStream+Standard.h */,
+				C5C6F17D1CF3601C00E43193 /* OZZipWriteStream.h */,
+				C5C6F17E1CF3601C00E43193 /* OZZipWriteStream.m */,
+			);
+			path = "Objective-Zip";
+			sourceTree = "<group>";
+		};
+		C5C6F1841CF3602F00E43193 /* MiniZip */ = {
+			isa = PBXGroup;
+			children = (
+				C5C6F1851CF3602F00E43193 /* crypt.h */,
+				C5C6F1861CF3602F00E43193 /* ioapi.c */,
+				C5C6F1871CF3602F00E43193 /* ioapi.h */,
+				C5C6F1881CF3602F00E43193 /* unzip.c */,
+				C5C6F1891CF3602F00E43193 /* unzip.h */,
+				C5C6F18A1CF3602F00E43193 /* zip.c */,
+				C5C6F18B1CF3602F00E43193 /* zip.h */,
+			);
+			path = MiniZip;
+			sourceTree = "<group>";
+		};
+		C5C8D4001CF3E919000398B3 /* JRSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				C5C8D4011CF3E919000398B3 /* JRSwizzle.h */,
+				C5C8D4021CF3E919000398B3 /* JRSwizzle.m */,
+			);
+			path = JRSwizzle;
+			sourceTree = "<group>";
+		};
+		C5C8D4041CF42C19000398B3 /* Other Framewotks */ = {
+			isa = PBXGroup;
+			children = (
+				C53DE8961CE75EDD00DA381D /* AppKit.framework */,
+				C53DE8981CE75EDD00DA381D /* Foundation.framework */,
+			);
+			name = "Other Framewotks";
+			sourceTree = "<group>";
+		};
+		C5CE2FF71CEE08CB00DE49D8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C528146E1CF303A400184D25 /* LogosSyntaxCompletion.plist */,
+				C5C6F1A51CF3613900E43193 /* ObjcSyntaxCompletion.zip */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C5CE30011CEEAA1B00DE49D8 /* LogosSyntax */ = {
+			isa = PBXGroup;
+			children = (
+				C50A40281CED5796009D08FE /* DVTSourceTextView+Tweak.h */,
+				C50A40291CED5796009D08FE /* DVTSourceTextView+Tweak.m */,
+				C53B802B1CEC7AEF002E6CF2 /* DVTCompletingTextView+Tweak.h */,
+				C53B802C1CEC7AEF002E6CF2 /* DVTCompletingTextView+Tweak.m */,
+				C50A402C1CEDA273009D08FE /* DVTKeywordScanner+Tweak.h */,
+				C50A402D1CEDA273009D08FE /* DVTKeywordScanner+Tweak.m */,
+			);
+			name = LogosSyntax;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C53DE8921CE75EDD00DA381D /* TweakAutocomplete */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C53DE8A91CE75EDD00DA381D /* Build configuration list for PBXNativeTarget "TweakAutocomplete" */;
+			buildPhases = (
+				C53DE88E1CE75EDD00DA381D /* Sources */,
+				C53DE88F1CE75EDD00DA381D /* Frameworks */,
+				C53DE8901CE75EDD00DA381D /* Resources */,
+				C53DE8911CE75EDD00DA381D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TweakAutocomplete;
+			productName = TweakAutocomplete;
+			productReference = C53DE8931CE75EDD00DA381D /* TweakAutocomplete.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C53DE88A1CE75EDD00DA381D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Jobs;
+				TargetAttributes = {
+					C53DE8921CE75EDD00DA381D = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = C53DE88D1CE75EDD00DA381D /* Build configuration list for PBXProject "TweakAutocomplete" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C53DE8891CE75EDD00DA381D;
+			productRefGroup = C53DE8941CE75EDD00DA381D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C53DE8921CE75EDD00DA381D /* TweakAutocomplete */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C53DE8901CE75EDD00DA381D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5C6F1A61CF3613900E43193 /* ObjcSyntaxCompletion.zip in Resources */,
+				C52814701CF303A400184D25 /* LogosSyntaxCompletion.plist in Resources */,
+				C53DE8AD1CE75FE800DA381D /* xx.xm in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C53DE88E1CE75EDD00DA381D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5C6F17F1CF3601C00E43193 /* OZFileInZipInfo.m in Sources */,
+				C5AEC33B1CF3044800D22486 /* TweakCompletionManager.m in Sources */,
+				C50A402A1CED5796009D08FE /* DVTSourceTextView+Tweak.m in Sources */,
+				C5C6F18E1CF3602F00E43193 /* zip.c in Sources */,
+				C50A402E1CEDA273009D08FE /* DVTKeywordScanner+Tweak.m in Sources */,
+				C5C4A21C1CF30D88006375E8 /* IDEIndexCompletionStrategy+Tweak.m in Sources */,
+				C53DE8A61CE75EDD00DA381D /* TweakAutocomplete.m in Sources */,
+				C5C6F1801CF3601C00E43193 /* OZZipException.m in Sources */,
+				C5C4A21F1CF30E16006375E8 /* IDEIndexCompletionItem+Init.m in Sources */,
+				C517F16D1CE8869A0054A0A1 /* IDESourceCodeDocument+Tweak.m in Sources */,
+				C53B802D1CEC7AEF002E6CF2 /* DVTCompletingTextView+Tweak.m in Sources */,
+				C5C6F18C1CF3602F00E43193 /* ioapi.c in Sources */,
+				C5C6F18D1CF3602F00E43193 /* unzip.c in Sources */,
+				C53B80311CEC7D92002E6CF2 /* IDESourceCodeEditor+Tweak.m in Sources */,
+				C5C6F1821CF3601C00E43193 /* OZZipReadStream.m in Sources */,
+				C5C6F1831CF3601C00E43193 /* OZZipWriteStream.m in Sources */,
+				C5C8D4031CF3E919000398B3 /* JRSwizzle.m in Sources */,
+				C5C6F1811CF3601C00E43193 /* OZZipFile.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C53DE8A71CE75EDD00DA381D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		C53DE8A81CE75EDD00DA381D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		C53DE8AA1CE75EDD00DA381D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_DIR)/../Frameworks",
+					"$(DEVELOPER_DIR)/../SharedFrameworks",
+					"$(DEVELOPER_DIR)/../OtherFrameworks",
+					"$(DEVELOPER_DIR)/../PlugIns",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TweakAutocomplete/PrefixHeader.pch;
+				INFOPLIST_FILE = TweakAutocomplete/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACH_O_TYPE = mh_bundle;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = "-lz";
+				PRODUCT_BUNDLE_IDENTIFIER = com.poboke.TweakAutocomplete;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		C53DE8AB1CE75EDD00DA381D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_DIR)/../Frameworks",
+					"$(DEVELOPER_DIR)/../SharedFrameworks",
+					"$(DEVELOPER_DIR)/../OtherFrameworks",
+					"$(DEVELOPER_DIR)/../PlugIns",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TweakAutocomplete/PrefixHeader.pch;
+				INFOPLIST_FILE = TweakAutocomplete/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACH_O_TYPE = mh_bundle;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = "-lz";
+				PRODUCT_BUNDLE_IDENTIFIER = com.poboke.TweakAutocomplete;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C53DE88D1CE75EDD00DA381D /* Build configuration list for PBXProject "TweakAutocomplete" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C53DE8A71CE75EDD00DA381D /* Debug */,
+				C53DE8A81CE75EDD00DA381D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C53DE8A91CE75EDD00DA381D /* Build configuration list for PBXNativeTarget "TweakAutocomplete" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C53DE8AA1CE75EDD00DA381D /* Debug */,
+				C53DE8AB1CE75EDD00DA381D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C53DE88A1CE75EDD00DA381D /* Project object */;
+}

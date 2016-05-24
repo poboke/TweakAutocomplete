@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BlockLevel</key>
+	<dict>
+		<key>%group</key>
+		<dict>
+			<key>name</key>
+			<string>%group</string>
+			<key>displayText</key>
+			<string>%group</string>
+			<key>completionText</key>
+			<string>%group &lt;#groupName#&gt; \n\n &lt;#hooks#&gt; \n\n %end // end group</string>
+			<key>descriptionText</key>
+			<string>Begin a hook group (for conditional initialization or code organization) with the name `Groupname`.</string>
+			<key>displayType</key>
+			<string></string>
+			<key>symbolKind</key>
+			<string>Xcode.SourceCodeSymbolKind.Callable</string>
+			<key>priority</key>
+			<string>99</string>
+		</dict>
+		<key>%hook</key>
+		<dict>
+			<key>name</key>
+			<string>%hook</string>
+			<key>displayText</key>
+			<string>%hook</string>
+			<key>completionText</key>
+			<string>%hook &lt;#className#&gt; \n\n &lt;#methods#&gt; \n\n %end // end hook</string>
+			<key>descriptionText</key>
+			<string>Open a hook block for the class named Classname.</string>
+			<key>displayType</key>
+			<string></string>
+			<key>symbolKind</key>
+			<string>Xcode.SourceCodeSymbolKind.Callable</string>
+			<key>priority</key>
+			<string>99</string>
+		</dict>
+		<key>%new</key>
+		<dict>
+			<key>name</key>
+			<string>%new</string>
+			<key>displayText</key>
+			<string>%new</string>
+			<key>completionText</key>
+			<string>%new \n &lt;#method#&gt; \n</string>
+			<key>descriptionText</key>
+			<string>Add a new method to a hooked class or subclass.</string>
+			<key>displayType</key>
+			<string></string>
+			<key>symbolKind</key>
+			<string>Xcode.SourceCodeSymbolKind.Callable</string>
+			<key>priority</key>
+			<string>99</string>
+		</dict>
+		<key>%new(signature)</key>
+		<dict>
+			<key>name</key>
+			<string>%new</string>
+			<key>displayText</key>
+			<string>%new(signature)</string>
+			<key>completionText</key>
+			<string>%new(&lt;#signature#&gt;) \n &lt;#method#&gt; \n</string>
+			<key>descriptionText</key>
+			<string>Add a new method to a hooked class or subclass. `signature` is the Objective-C type encoding for the new method;</string>
+			<key>displayType</key>
+			<string></string>
+			<key>symbolKind</key>
+			<string>Xcode.SourceCodeSymbolKind.Callable</string>
+			<key>priority</key>
+			<string>99</string>
+		</dict>
+		<key>%subclass</key>
+		<dict>
+			<key>name</key>
+			<string>%subclass</string>
+			<key>displayText</key>
+			<string>%subclass</string>
+			<key>completionText</key>
+			<string>%subclass &lt;#className#&gt; : &lt;#superclass#&gt; \n\n &lt;#methods#&gt; \n\n %end // end subclass</string>
+			<key>descriptionText</key>
+			<string>Subclass block - the class is created at runtime and populated with methods.</string>
+			<key>displayType</key>
+			<string></string>
+			<key>symbolKind</key>
+			<string>Xcode.SourceCodeSymbolKind.Callable</string>
+			<key>priority</key>
+			<string>99</string>
+		</dict>
+		<key>%end</key>
+		<dict>
+			<key>name</key>
+			<string>%end</string>
+			<key>displayText</key>
+			<string>%end</string>
+			<key>completionText</key>
+			<string>%end</string>
+			<key>descriptionText</key>
+			<string>Close a group/hook/subclass block.</string>
+			<key>displayType</key>
+			<string></string>
+			<key>symbolKind</key>
+			<string>Xcode.SourceCodeSymbolKind.Callable</string>
+			<key>priority</key>
+			<string>99</string>
+		</dict>
+	</dict>
+	<key>TopLevel</key>
+	<dict>
+		<key>%config</key>
+		<dict>
+			<key>name</key>
+			<string>%config</string>
+			<key>displayText</key>
+			<string>%config</string>
+			<key>completionText</key>
+			<string>%config(&lt;#Key=Value#&gt;);</string>
+			<key>descriptionText</key>
+			<string>Set a logos configuration flag.</string>
+			<key>displayType</key>
+			<string>void</string>
+			<key>symbolKind</key>
+			<string>Xcode.SourceCodeSymbolKind.Function</string>
+			<key>priority</key>
+			<string>99</string>
+		</dict>
+		<key>%hookf</key>
+		<dict>
+			<key>name</key>
+			<string>%hookf</string>
+			<key>displayText</key>
+			<string>%hookf</string>
+			<key>completionText</key>
+			<string>%hookf(&lt;#rtype#&gt;, &lt;#symbolName#&gt;, &lt;#args...#&gt;) { \n &lt;#statements#&gt; \n} \n %end // end hookf</string>
+			<key>descriptionText</key>
+			<string>Generate a function hook for the function named symbolName.</string>
+			<key>displayType</key>
+			<string>void</string>
+			<key>symbolKind</key>
+			<string>Xcode.SourceCodeSymbolKind.Function</string>
+			<key>priority</key>
+			<string>99</string>
+		</dict>
+		<key>%ctor</key>
+		<dict>
+			<key>name</key>
+			<string>%ctor</string>
+			<key>displayText</key>
+			<string>%ctor</string>
+			<key>completionText</key>
+			<string>%ctor { \n &lt;#statements#&gt; \n}</string>
+			<key>descriptionText</key>
+			<string>Generate an anonymous constructor (of default priority).</string>
+			<key>displayType</key>
+			<string></string>
+			<key>symbolKind</key>
+			<string>Xcode.SourceCodeSymbolKind.Function</string>
+			<key>priority</key>
+			<string>99</string>
+		</dict>
+		<key>%dtor</key>
+		<dict>
+			<key>name</key>
+			<string>%dtor</string>
+			<key>displayText</key>
+			<string>%dtor</string>
+			<key>completionText</key>
+			<string>%dtor { \n &lt;#statements#&gt; \n}</string>
+			<key>descriptionText</key>
+			<string>Generate an anonymous deconstructor (of default priority).</string>
+			<key>displayType</key>
+			<string></string>
+			<key>symbolKind</key>
+			<string>Xcode.SourceCodeSymbolKind.Function</string>
+			<key>priority</key>
+			<string>99</string>
+		</dict>
+	</dict>
+	<key>FunctionLevel</key>
+	<dict>
+		<key>%init</key>
+		<dict>
+			<key>name</key>
+			<string>%init</string>
+			<key>displayText</key>
+			<string>%init</string>
+			<key>completionText</key>
+			<string>%init;</string>
+			<key>descriptionText</key>
+			<string>Initialize a group (or the default group). </string>
+			<key>displayType</key>
+			<string></string>
+			<key>symbolKind</key>
+			<string>Xcode.SourceCodeSymbolKind.Callable</string>
+			<key>priority</key>
+			<string>99</string>
+		</dict>
+		<key>%init([&lt;class&gt;=&lt;expr&gt;, ...])</key>
+		<dict>
+			<key>name</key>
+			<string>%init</string>
+			<key>displayText</key>
+			<string>%init(&lt;class&gt;=&lt;expr&gt;, ...)</string>
+			<key>completionText</key>
+			<string>%init(&lt;#class = expr, ...#&gt;);</string>
+			<key>descriptionText</key>
+			<string>Initialize a group (or the default group). </string>
+			<key>displayType</key>
+			<string>void</string>
+			<key>symbolKind</key>
+			<string>Xcode.SourceCodeSymbolKind.Function</string>
+			<key>priority</key>
+			<string>99</string>
+		</dict>
+		<key>%c</key>
+		<dict>
+			<key>name</key>
+			<string>%c</string>
+			<key>displayText</key>
+			<string>%c</string>
+			<key>completionText</key>
+			<string>%c(&lt;#[+|-]class#&gt;)</string>
+			<key>descriptionText</key>
+			<string>Evaluates to Class at runtime. If the + sigil is specified, it evaluates to MetaClass instead of Class. If not specified, the sigil defaults to -, evaluating to Class.</string>
+			<key>displayType</key>
+			<string>Class</string>
+			<key>symbolKind</key>
+			<string>Xcode.SourceCodeSymbolKind.Function</string>
+			<key>priority</key>
+			<string>99</string>
+		</dict>
+		<key>%orig</key>
+		<dict>
+			<key>name</key>
+			<string>%orig</string>
+			<key>displayText</key>
+			<string>%orig</string>
+			<key>completionText</key>
+			<string>%orig;</string>
+			<key>descriptionText</key>
+			<string>Call the original hooked method.</string>
+			<key>displayType</key>
+			<string></string>
+			<key>symbolKind</key>
+			<string>Xcode.SourceCodeSymbolKind.Callable</string>
+			<key>priority</key>
+			<string>99</string>
+		</dict>
+		<key>%orig(arg1, ...)</key>
+		<dict>
+			<key>name</key>
+			<string>%orig</string>
+			<key>displayText</key>
+			<string>%orig(arg1, ...)</string>
+			<key>completionText</key>
+			<string>%orig(&lt;#arg1, ...#&gt;);</string>
+			<key>descriptionText</key>
+			<string>Call the original hooked method. Args is passed to the original function - don&apos;t include self and _cmd, Logos does this for you.</string>
+			<key>displayType</key>
+			<string>void</string>
+			<key>symbolKind</key>
+			<string>Xcode.SourceCodeSymbolKind.Function</string>
+			<key>priority</key>
+			<string>99</string>
+		</dict>
+		<key>%log</key>
+		<dict>
+			<key>name</key>
+			<string>%log</string>
+			<key>displayText</key>
+			<string>%log</string>
+			<key>completionText</key>
+			<string>%log;</string>
+			<key>descriptionText</key>
+			<string>Dump the method arguments to syslog. Typed arguments included in %log will be logged as well.</string>
+			<key>displayType</key>
+			<string></string>
+			<key>symbolKind</key>
+			<string>Xcode.SourceCodeSymbolKind.Callable</string>
+			<key>priority</key>
+			<string>99</string>
+		</dict>
+		<key>%log([(&lt;type&gt;)&lt;expr&gt;, ...])</key>
+		<dict>
+			<key>name</key>
+			<string>%log</string>
+			<key>displayText</key>
+			<string>%log([(&lt;type&gt;)&lt;expr&gt;, ...])</string>
+			<key>completionText</key>
+			<string>%log(&lt;#(type)expr, ...#&gt;);</string>
+			<key>descriptionText</key>
+			<string>Dump the method arguments to syslog. Typed arguments included in %log will be logged as well.</string>
+			<key>displayType</key>
+			<string>void</string>
+			<key>symbolKind</key>
+			<string>Xcode.SourceCodeSymbolKind.Function</string>
+			<key>priority</key>
+			<string>99</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
