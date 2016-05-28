@@ -1,20 +1,26 @@
 
-#import "TweakAutocomplete.h"
+// This file just for debuging
 
-@interface TweakAutocomplete()
-
-- (void)functionxxx:(NSString *)hook;
-
+@interface SpringBoard : UIApplication
+- (void)applicationDidFinishLaunching:(UIApplication *)application;
 @end
 
 
-@implementation TweakAutocomplete
+%group iOS9Group
 
-- (void)viewDidLoad
+%hook SpringBoard
+
+- (void)applicationDidFinishLaunching:(UIApplication *)application
 {
+    %log(@"application:", application);
     %orig;
 }
 
-@end
+%end // end hook
+
+%end // end group
 
 
+%ctor {
+    %init(iOS9Group);
+}
