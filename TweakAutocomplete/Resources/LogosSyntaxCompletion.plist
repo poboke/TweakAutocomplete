@@ -64,7 +64,7 @@
 			<key>completionText</key>
 			<string>%new(&lt;#signature#&gt;) \n &lt;#method#&gt; \n</string>
 			<key>descriptionText</key>
-			<string>Add a new method to a hooked class or subclass. `signature` is the Objective-C type encoding for the new method;</string>
+			<string>Add a new method to a hooked class or subclass. `signature` is the Objective-C type encoding for the new method.</string>
 			<key>displayType</key>
 			<string></string>
 			<key>symbolKind</key>
@@ -189,7 +189,7 @@
 			<key>completionText</key>
 			<string>%init;</string>
 			<key>descriptionText</key>
-			<string>Initialize a group (or the default group). </string>
+			<string>Initialize a group (or the default group).</string>
 			<key>displayType</key>
 			<string></string>
 			<key>symbolKind</key>
@@ -206,7 +206,7 @@
 			<key>completionText</key>
 			<string>%init(&lt;#class = expr, ...#&gt;);</string>
 			<key>descriptionText</key>
-			<string>Initialize a group (or the default group). </string>
+			<string>Initialize a group (or the default group).</string>
 			<key>displayType</key>
 			<string>void</string>
 			<key>symbolKind</key>
@@ -296,6 +296,162 @@
 			<string>void</string>
 			<key>symbolKind</key>
 			<string>Xcode.SourceCodeSymbolKind.Function</string>
+			<key>priority</key>
+			<string>99</string>
+		</dict>
+	</dict>
+	<key>Keyword</key>
+	<dict>
+		<key>generator</key>
+		<dict>
+			<key>name</key>
+			<string>generator</string>
+			<key>displayText</key>
+			<string>generator</string>
+			<key>completionText</key>
+			<string>generator</string>
+			<key>descriptionText</key>
+			<string>Logos Configuration Key.</string>
+			<key>displayType</key>
+			<string>String</string>
+			<key>symbolKind</key>
+			<string>Xcode.SourceCodeSymbolKind.GlobalVariable</string>
+			<key>priority</key>
+			<string>99</string>
+		</dict>
+		<key>generator : MobileSubstrate</key>
+		<dict>
+			<key>name</key>
+			<string>MobileSubstrate</string>
+			<key>displayText</key>
+			<string>MobileSubstrate</string>
+			<key>completionText</key>
+			<string>MobileSubstrate</string>
+			<key>descriptionText</key>
+			<string>Generate code that uses MobileSubstrate for hooking.</string>
+			<key>displayType</key>
+			<string>String</string>
+			<key>symbolKind</key>
+			<string>Xcode.SourceCodeSymbolKind.GlobalVariable</string>
+			<key>priority</key>
+			<string>99</string>
+		</dict>
+		<key>generator : internal</key>
+		<dict>
+			<key>name</key>
+			<string>internal</string>
+			<key>displayText</key>
+			<string>internal</string>
+			<key>completionText</key>
+			<string>internal</string>
+			<key>descriptionText</key>
+			<string>Generate code that uses only internal Objective-C runtime methods for hooking.</string>
+			<key>displayType</key>
+			<string>String</string>
+			<key>symbolKind</key>
+			<string>Xcode.SourceCodeSymbolKind.GlobalVariable</string>
+			<key>priority</key>
+			<string>99</string>
+		</dict>
+		<key>warnings</key>
+		<dict>
+			<key>name</key>
+			<string>warnings</string>
+			<key>displayText</key>
+			<string>warnings</string>
+			<key>completionText</key>
+			<string>warnings</string>
+			<key>descriptionText</key>
+			<string>Logos Configuration Key.</string>
+			<key>displayType</key>
+			<string>String</string>
+			<key>symbolKind</key>
+			<string>Xcode.SourceCodeSymbolKind.GlobalVariable</string>
+			<key>priority</key>
+			<string>99</string>
+		</dict>
+		<key>warnings : none</key>
+		<dict>
+			<key>name</key>
+			<string>none</string>
+			<key>displayText</key>
+			<string>none</string>
+			<key>completionText</key>
+			<string>none</string>
+			<key>descriptionText</key>
+			<string>Suppress all warnings.</string>
+			<key>displayType</key>
+			<string>String</string>
+			<key>symbolKind</key>
+			<string>Xcode.SourceCodeSymbolKind.GlobalVariable</string>
+			<key>priority</key>
+			<string>99</string>
+		</dict>
+		<key>warnings : default</key>
+		<dict>
+			<key>name</key>
+			<string>default</string>
+			<key>displayText</key>
+			<string>default</string>
+			<key>completionText</key>
+			<string>default</string>
+			<key>descriptionText</key>
+			<string>Non-fatal warnings.</string>
+			<key>displayType</key>
+			<string>String</string>
+			<key>symbolKind</key>
+			<string>Xcode.SourceCodeSymbolKind.GlobalVariable</string>
+			<key>priority</key>
+			<string>99</string>
+		</dict>
+		<key>warnings : error</key>
+		<dict>
+			<key>name</key>
+			<string>error</string>
+			<key>displayText</key>
+			<string>error</string>
+			<key>completionText</key>
+			<string>error</string>
+			<key>descriptionText</key>
+			<string>Make all warnings fatal.</string>
+			<key>displayType</key>
+			<string>String</string>
+			<key>symbolKind</key>
+			<string>Xcode.SourceCodeSymbolKind.GlobalVariable</string>
+			<key>priority</key>
+			<string>99</string>
+		</dict>
+		<key>dump</key>
+		<dict>
+			<key>name</key>
+			<string>dump</string>
+			<key>displayText</key>
+			<string>dump</string>
+			<key>completionText</key>
+			<string>dump</string>
+			<key>descriptionText</key>
+			<string>Logos Configuration Key.</string>
+			<key>displayType</key>
+			<string>String</string>
+			<key>symbolKind</key>
+			<string>Xcode.SourceCodeSymbolKind.GlobalVariable</string>
+			<key>priority</key>
+			<string>99</string>
+		</dict>
+		<key>dump : yaml</key>
+		<dict>
+			<key>name</key>
+			<string>yaml</string>
+			<key>displayText</key>
+			<string>yaml</string>
+			<key>completionText</key>
+			<string>yaml</string>
+			<key>descriptionText</key>
+			<string>Dump the internal parse tree in YAML format.</string>
+			<key>displayType</key>
+			<string>String</string>
+			<key>symbolKind</key>
+			<string>Xcode.SourceCodeSymbolKind.GlobalVariable</string>
 			<key>priority</key>
 			<string>99</string>
 		</dict>
