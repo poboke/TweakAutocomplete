@@ -22,7 +22,8 @@
 {
     // Should autocomplete when pressing `%` key.
     if (TweakAutocompletePlugin.isEdittingTweakFile) {
-        unichar character = [self.textStorage.string characterAtIndex:(location - 1)];
+        NSInteger index = MAX((location - 1), 0);
+        unichar character = [self.textStorage.string characterAtIndex:index];
         if (character == LogosSyntaxStartChar) {
             return YES;
         }
