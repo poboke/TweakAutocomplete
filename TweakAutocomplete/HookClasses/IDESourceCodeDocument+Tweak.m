@@ -14,7 +14,7 @@
 {
     [self jr_swizzleMethod:@selector(fileType)
                 withMethod:@selector(tweak_fileType)
-                     error:nil];
+                     error:NULL];
 }
 
 

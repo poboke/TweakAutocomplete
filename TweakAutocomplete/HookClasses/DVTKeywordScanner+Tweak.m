@@ -14,7 +14,7 @@
 {
     [self jr_swizzleMethod:@selector(initWithPropertyListDictionary:language:)
                 withMethod:@selector(tweak_initWithPropertyListDictionary:language:)
-                     error:nil];
+                     error:NULL];
 }
 
 

@@ -8,8 +8,7 @@ TweakAutocomplete is a plugin for Xcode. This plugin can autocomplete logos synt
 
 ## Support Xcode versions
 
-- Xcode6
-- Xcode7
+- Xcode 7.3.1+
 
 
 ## Auto install and uninstall

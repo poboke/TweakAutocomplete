@@ -15,7 +15,7 @@
 {
     [self jr_swizzleMethod:@selector(didSetupEditor)
                 withMethod:@selector(tweak_didSetupEditor)
-                     error:nil];
+                     error:NULL];
 }
 
 

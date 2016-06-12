@@ -14,7 +14,7 @@
 {
     [self jr_swizzleMethod:@selector(shouldAutoCompleteAtLocation:)
                 withMethod:@selector(tweak_shouldAutoCompleteAtLocation:)
-                     error:nil];
+                     error:NULL];
 }
 
 

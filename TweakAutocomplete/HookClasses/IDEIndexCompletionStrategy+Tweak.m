@@ -14,7 +14,7 @@
 {
     [self jr_swizzleMethod:@selector(completionItemsForDocumentLocation:context:highlyLikelyCompletionItems:areDefinitive:)
                 withMethod:@selector(tweak_completionItemsForDocumentLocation:context:highlyLikelyCompletionItems:areDefinitive:)
-                     error:nil];
+                     error:NULL];
 }
 
 

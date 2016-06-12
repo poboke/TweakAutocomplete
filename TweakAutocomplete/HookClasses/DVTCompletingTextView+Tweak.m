@@ -14,7 +14,7 @@
 {
     [self jr_swizzleClassMethod:@selector(identifierChars)
                 withClassMethod:@selector(tweak_identifierChars)
-                          error:nil];
+                          error:NULL];
 }
 
 
